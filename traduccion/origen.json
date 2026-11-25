@@ -86,6 +86,7 @@
 "juego/destinos.py"
 ],
 " Al llegar, el GPS vuelve a {nombre}.": [
+"juego/misvehiculos.py",
 "juego/partida.py"
 ],
 " Algo así se pide a la cara.": [
@@ -38218,6 +38219,9 @@
 "REGISTRO DE UNA SESIÓN DE PUERTO BRAVO: LEY DEL ASFALTO\n\nSi el juego te ha dado un fallo, comprime esta carpeta entera en un ZIP y envíala a quien hace el juego.\nCon ella se puede ver qué pasó sin estar delante.\n\nQUÉ CONTIENE\n  sistema.txt       Versión del juego, versión de Windows, lector de pantalla, sonido, mods, packs y opciones.\n  sesion.log        Lo que ha pasado en esta sesión, por orden: pantallas abiertas, teclas pulsadas en el juego,\n                    lo que el juego ha dicho, el estado de la partida cada pocos segundos, avisos y errores.\n  errores.log       Los errores, con su detalle técnico.\n  fallo_grave.log   Solo tiene algo si el programa se cerró de golpe.\n\nQUÉ NO CONTIENE\n  Nada de lo que escribes en los cuadros de texto: mensajes, contraseñas, direcciones ni claves.\n  Ni los mensajes del chat, ni tu nombre en la red, ni el de tus amigos.\n  Ni direcciones de internet, ni tu nombre de usuario de Windows, ni el nombre de tu equipo, ni las rutas de tus carpetas.\n  Ni los nombres de tu música, ni tus partidas guardadas.\n\nSon archivos de texto: puedes abrirlos y leerlos antes de enviarlos.\nSe guardan las cinco últimas sesiones; las más antiguas se borran solas.\n": [
 "juego/registro.py"
 ],
+"RP Brasil": [
+"data/datos/comunidad.json"
+],
 "Raciones de pienso para {perro}: {get}": [
 "juego/menus_juego.py"
 ],
@@ -46674,6 +46678,9 @@
 "Un scooter con luces de colores bajo el chasis.": [
 "data/mods/noches_de_neon.json"
 ],
+"Un servidor brasileño de rol: se interpreta a un personaje y se crean historias con otros jugadores. Es público, sin contraseña ni invitación. Lo lleva MR Productions.": [
+"data/datos/comunidad.json"
+],
 "Un servidor es un mundo que no se apaga, con jugadores de verdad: puedes hacer todo lo que haces jugando por tu cuenta, y además encontrarte con los demás, comerciar, formar bandas, pelear por los barrios o hacer misiones en grupo. Tu personaje se guarda en el servidor.": [
 "juego/menus_juego.py"
 ],
@@ -50302,6 +50309,12 @@
 "Ya tienes {destino} debajo. Elige dónde bajas.": [
 "juego/vuelo.py",
 "data/datos/vida.json"
+],
+"Ya tienes {nombre} a tu lado.": [
+"juego/misvehiculos.py"
+],
+"Ya tienes {nombre} a tu lado. El GPS se queda sin destino.": [
+"juego/misvehiculos.py"
 ],
 "Ya tienes {nombre}.": [
 "juego/menus_juego.py"
@@ -54259,7 +54272,8 @@
 "servidor/nucleo.py"
 ],
 "portugués de Brasil": [
-"juego/i18n.py"
+"juego/i18n.py",
+"data/datos/comunidad.json"
 ],
 "prefiero no decirlo": [
 "juego/menus_juego.py"

@@ -185,5 +185,9 @@
  "muelle": "cais",
  "pared": "parede",
  "La sección Comunidad de jugadores del menú principal: grupos, foros, servidores y otros recursos que crean y llevan los propios jugadores. No es oficial. Para apuntar uno, la issue 25 de GitHub. Cada cambio sube «revision» y se publica con herramientas/publicar_comunidad.py: así le llega al juego sin esperar a una versión nueva.": "A seção Comunidade de jogadores do menu principal: grupos, fóruns, servidores e outros recursos que os próprios jogadores criam e mantêm. Não é oficial. Para incluir um, a issue 25 do GitHub. Cada mudança aumenta «revision» e é publicada com herramientas/publicar_comunidad.py: assim chega ao jogo sem esperar uma versão nova.",
- "Patricus productions": "Patricus productions"
+ "Patricus productions": "Patricus productions",
+ "Ya tienes {nombre} a tu lado.": "{nombre} já está ao seu lado.",
+ "Ya tienes {nombre} a tu lado. El GPS se queda sin destino.": "{nombre} já está ao seu lado. O GPS fica sem destino.",
+ "RP Brasil": "RP Brasil",
+ "Un servidor brasileño de rol: se interpreta a un personaje y se crean historias con otros jugadores. Es público, sin contraseña ni invitación. Lo lleva MR Productions.": "Um servidor brasileiro de roleplay: você interpreta um personagem e cria histórias com outros jogadores. É público, sem senha nem convite. Administrado pela MR Productions."
 }

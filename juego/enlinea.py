@@ -2295,6 +2295,7 @@ class EnLinea:
                     self.ultimo_veh = v                          # Mayúsculas L y Servicios lo encuentran
                 self.son(v.modelo.get("claxon", "claxon"), xy=(v.x, v.y))
                 self.decir(tr('Tu mecánico te deja {nombre} en la calle. {situar}.').format(nombre=(v.nombre), situar=(self.situar(v.x, v.y, tr('Está')))), True)
+                self.gps_tras_traer(v, v)                        # si el GPS te llevaba a él, ahora va adonde lo han dejado
         elif que == "garaje":
             casa = self.lug(m.get("ref") or pend.get("casa") or "")
             self.sv["vehs"].pop(d["id"], None)

@@ -607,7 +607,22 @@ class MisVehiculos:
         self.vehiculo_traido(v)
         self.son(v.modelo.get("claxon", "claxon"), xy=(x, y))
         self.decir(tr('Tu mecánico te deja {nombre} en la calle. {situar}.').format(nombre=(v.nombre), situar=(self.situar(x, y, tr('Está')))), True)
+        self.gps_tras_traer(cosa, v)
         return v
+
+    def gps_tras_traer(self, cosa, v):
+        """Te han traído el vehículo al que te llevaba el GPS: ya no hay que ir a buscarlo. Si el destino era el propio
+        vehículo, pasa a donde lo han dejado (y se acaba al subir); si era la casa de su garaje o su localidad, se quita."""
+        g = self.gps
+        if g is None:
+            return
+        if g.get("cosa") is v or g.get("sigue") is v:
+            g["dest"], g["ruta"], g["clave"] = (v.x, v.y), [], None
+            self._recalcular_gps()
+        elif g.get("para") is not None and g.get("para") is cosa:
+            if not self._volver_del_desvio(tr('Ya tienes {nombre} a tu lado.').format(nombre=(v.nombre))):
+                self.gps = None
+                self.decir(tr('Ya tienes {nombre} a tu lado. El GPS se queda sin destino.').format(nombre=(v.nombre)))
 
     def vehiculo_traido(self, v):
         """Tu mecánico te acaba de dejar este vehículo: es el tuyo de ahora. Mayúsculas L y Servicios lo encuentran, no
@@ -1046,14 +1061,20 @@ def menu_mis_vehiculos(p):
 
             def gps():
                 _volver_al_juego(p)
-                p.fijar_gps(v.x, v.y, v.nombre)
-                p.decir(tr('{situar}. {describir}. Marcado en el GPS.').format(situar=(p.situar(v.x, v.y, v.nombre)), describir=(p.mundo.describir(v.x, v.y))), True)
+                # Como Mayúsculas L: el destino es el vehículo, no el sitio. Si te lo traen, el GPS va adonde lo dejan, y al
+                # subir se acaba; antes se quedaba en el sitio de antes y el piloto del GPS te llevaba allí con él.
+                p.fijar_gps(v.x, v.y, v.nombre, desvio=True, cosa=v)
+                antes = (p.gps or {}).get("anterior")
+                p.decir(tr('{situar}. {describir}. Marcado en el GPS.').format(situar=(p.situar(v.x, v.y, v.nombre)), describir=(p.mundo.describir(v.x, v.y)))
+                        + (tr(' Al llegar, el GPS vuelve a {nombre}.').format(nombre=(antes['nombre'])) if antes is not None else ""), True)
 
             def gps_casa():
                 l = p.lug(f["garaje"])
                 if l is not None:
                     _volver_al_juego(p)
                     p.gps_a_lugar(l)
+                    if p.gps is not None:
+                        p.gps["para"] = cosa                     # se va a por este vehículo: si te lo traen, sobra
 
             def gps_lejos():
                 mapa = p.mapas.get(d.get("mapa"))
@@ -1062,6 +1083,8 @@ def menu_mis_vehiculos(p):
                 l = min(mapa.lugares.values(), key=lambda q: math.hypot(q.x - float(d.get("x", 0)), q.y - float(d.get("y", 0))))
                 _volver_al_juego(p)
                 p.gps_a_lugar(l)                                 # el GPS dice cómo se llega a esa localidad; allí, Mayúsculas L o esta lista
+                if p.gps is not None:
+                    p.gps["para"] = cosa
 
             def traer():
                 if p.traer_mi_vehiculo(cosa, f.get("garaje")) is not None:

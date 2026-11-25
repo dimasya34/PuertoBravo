@@ -229,5 +229,9 @@
   "pared": "bức tường",
   "Uno por línea, con el nombre interno del tema de la base de conversación: tiempo, futbol, trabajo_duro, dinero, comida... Si lo dejas vacío, valen los de serie.": "Một mục trên mỗi dòng, kèm tên nội bộ của chủ đề đối thoại: tiempo, futbol, trabajo_duro, dinero, comida... Nếu để trống, sẽ dùng các chủ đề mặc định.",
   "La sección Comunidad de jugadores del menú principal: grupos, foros, servidores y otros recursos que crean y llevan los propios jugadores. No es oficial. Para apuntar uno, la issue 25 de GitHub. Cada cambio sube «revision» y se publica con herramientas/publicar_comunidad.py: así le llega al juego sin esperar a una versión nueva.": "Mục Cộng đồng người chơi trong menu chính: các nhóm, diễn đàn, máy chủ và nguồn tài nguyên khác do chính người chơi tạo và vận hành. Mục này không chính thức. Để đăng ký một nơi, hãy dùng issue 25 trên GitHub. Mỗi thay đổi sẽ tăng «revision» và được công bố bằng herramientas/publicar_comunidad.py: nhờ vậy nó đến với trò chơi mà không cần chờ phiên bản mới.",
-  "Patricus productions": "Patricus productions"
+  "Patricus productions": "Patricus productions",
+  "Ya tienes {nombre} a tu lado.": "{nombre} đã ở ngay cạnh bạn.",
+  "Ya tienes {nombre} a tu lado. El GPS se queda sin destino.": "{nombre} đã ở ngay cạnh bạn. GPS không còn điểm đến nào.",
+  "RP Brasil": "RP Brasil",
+  "Un servidor brasileño de rol: se interpreta a un personaje y se crean historias con otros jugadores. Es público, sin contraseña ni invitación. Lo lleva MR Productions.": "Một máy chủ nhập vai của Brasil: bạn hóa thân vào một nhân vật và cùng những người chơi khác tạo nên câu chuyện. Máy chủ công khai, không cần mật khẩu hay lời mời. Do MR Productions quản lý."
 }

@@ -1,6 +1,6 @@
 {
   "_nota": "La sección Comunidad de jugadores del menú principal: grupos, foros, servidores y otros recursos que crean y llevan los propios jugadores. No es oficial. Para apuntar uno, la issue 25 de GitHub. Cada cambio sube «revision» y se publica con herramientas/publicar_comunidad.py: así le llega al juego sin esperar a una versión nueva.",
-  "revision": 2,
+  "revision": 3,
   "titulo": "Comunidad de jugadores, sección no oficial",
   "aviso": "Esta sección no es oficial. Aquí están los grupos, foros, servidores y otros sitios que han creado los propios jugadores. Los crean, los llevan y los moderan ellos.",
   "responsabilidad": "El autor del juego no se hace responsable del contenido que se comparte en estos sitios ni de lo que pase en ellos. Todo lo que hay aquí lo gestionan los usuarios y no tiene que ver con el proyecto. El autor solo da visibilidad a los recursos que crean los jugadores.",
@@ -37,7 +37,9 @@
         {"nombre": "godeano.vip", "idioma": "español", "servidor": "puertobravo://godeano.vip:47820",
          "desc": "Un servidor que lleva un jugador. Sus normas las pone quien lo lleva."},
         {"nombre": "Patricus productions", "idioma": "inglés", "servidor": "puertobravo://posix.live:47820",
-         "desc": "Un servidor que lleva un jugador. Sus normas las pone quien lo lleva."}
+         "desc": "Un servidor que lleva un jugador. Sus normas las pone quien lo lleva."},
+        {"nombre": "RP Brasil", "idioma": "portugués de Brasil", "servidor": "puertobravo://mrproductions.com.br:47820",
+         "desc": "Un servidor brasileño de rol: se interpreta a un personaje y se crean historias con otros jugadores. Es público, sin contraseña ni invitación. Lo lleva MR Productions."}
       ]
     },
     {

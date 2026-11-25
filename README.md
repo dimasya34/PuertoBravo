@@ -495,6 +495,7 @@ Gracias a todas las personas que han ayudado a mejorar Puerto Bravo desde GitHub
 - [retrochiptuner](https://github.com/retrochiptuner): la misión de la llave del polvorín, que seguía saliendo como disponible.
 - [UnDuende](https://github.com/UnDuende): el grupo de Telegram de la comunidad en español.
 - [ebram212131](https://github.com/ebram212131): la petición de que el juego funcione también en Linux y en Mac.
+- [matheus-raeski](https://github.com/matheus-raeski): el servidor de jugadores RP Brasil, de rol y en portugués.
 
 ---
 

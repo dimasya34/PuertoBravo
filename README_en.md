@@ -509,6 +509,7 @@ Thanks to everyone who has helped make Puerto Bravo better through GitHub. Whene
 - [retrochiptuner](https://github.com/retrochiptuner): the powder magazine key mission, which still showed as available.
 - [UnDuende](https://github.com/UnDuende): the community's Spanish Telegram group.
 - [ebram212131](https://github.com/ebram212131): the request for the game to run on Linux and Mac as well.
+- [matheus-raeski](https://github.com/matheus-raeski): the RP Brasil player server, a roleplay server in Portuguese.
 
 ---
 
