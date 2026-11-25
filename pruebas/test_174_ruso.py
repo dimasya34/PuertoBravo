@@ -124,3 +124,15 @@ def test_el_instalador_no_traduce_sintaxis_de_windows(tmp_path):
             os.environ["PUERTOBRAVO_IDIOMA"] = antiguo
         i18n.cargar("es")
 
+
+def test_traduccion_mando_y_botones_en_ruso():
+    cat = _catalogo()
+    assert cat["Mando"] == "Контроллер"
+    assert cat["Mando, a pie"] == "Контроллер, пешком"
+    assert cat["Mando, al volante"] == "Контроллер, за рулём"
+    assert cat["cruceta arriba"] == "крестовина вверх"
+    assert cat["Cuadrado"] == "Квадрат"
+    assert cat["Equis"] == "Крест"
+    assert "команда" not in cat["Mando"].lower()
+    assert "командир" not in cat["Mando, al volante"].lower()
+
